@@ -31,6 +31,22 @@ python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.dumpfi
 Checked the hash value on the Virus total and found it clean.
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/dfbdeb00-e073-4a62-81c6-004e1820bbd6)
 
+Answer: “oneetx.exe” is the malicious process
+
+Q2- What is the child process name of the suspicious process?
+
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.pstree
+We can find the name of the child process name from the above command
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/63a4d90f-3e0b-45fc-a057-846f06d2b448)
+
+parent process name: rundll32.exe
+
+
+
+
+
+
+
 
 
 
