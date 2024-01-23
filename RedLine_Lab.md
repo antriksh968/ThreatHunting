@@ -9,5 +9,12 @@ In this scenario, we will use Tool volatility to analyze the Memory Dump
 
 Q1- What is the name of the suspicious process?
 
+To find the suspicious process we will use the Volatility plugin windows.malfind for finding injected code or malware in memory. 
+python3 vol.py -f  /media/sf_kali_labs_data/RedLine/MemoryDump.mem  windows.malfind
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/d176c51d-8011-4666-9ea0-cf91f0605c4c)
+
+
+
+
 
 
