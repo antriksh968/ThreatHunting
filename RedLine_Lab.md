@@ -6,8 +6,9 @@ Tools:
 Volatility
 
 In this scenario, we will use Tool volatility to analyze the memory dump
-**Memory Dump: A memory dump is a process where a computer saves the contents of its random access memory (RAM) to a file. RAM is the volatile memory that a computer uses to store data that is actively being used or processed by the CPU. This storage is temporary, and when the computer is powered off or restarted, the contents of RAM are typically lost.
-**
+
+Memory Dump: A memory dump is a process where a computer saves the contents of its random access memory (RAM) to a file. RAM is the volatile memory that a computer uses to store data that is actively being used or processed by the CPU. This storage is temporary, and when the computer is powered off or restarted, the contents of RAM are typically lost.
+
 Here's a concise list of the types of data typically found in a memory dump:
 Stack Traces: Information about the call stack for each active thread.
 Memory Contents: The actual contents of RAM, including data structures and program code.
