@@ -5,7 +5,7 @@ As a member of the Security Blue team, your assignment is to analyze a memory du
 Tools:
 Volatility
 
-In this scenario, we will use Tool volatility to analyze the memory dump
+In this scenario, we will use Tool volatility to analyze the Memorydump.md
 
 Q1- What is the name of the suspicious process?
 
