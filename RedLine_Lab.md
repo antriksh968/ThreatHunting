@@ -16,6 +16,29 @@ python3 vol.py -f  /media/sf_kali_labs_data/RedLine/MemoryDump.mem  windows.malf
 5896    oneetx.exe
 7540    smartscreen.ex
 
+Dumped above process 5896 & 7540 from the below command 
+
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.dumpfile --pid 5896
+
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/2147982f-118f-4ede-9a00-b0908c91d74f)'
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/32a396a7-342e-47cc-bc72-66224f8002ea)
+Checked the hash value on the Virus total and found it suspicious.
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/a8a679ab-c163-44fd-bceb-132f7be154b5)
+
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.dumpfile --pid 7540
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/331e7447-9b3d-4a63-9b13-07ab29356580)
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/0009c91b-4842-40c6-aa17-351199da9eaa)
+Checked the hash value on the Virus total and found it clean.
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/dfbdeb00-e073-4a62-81c6-004e1820bbd6)
+
+
+
+
+
+
+
+
+
 
 
 
