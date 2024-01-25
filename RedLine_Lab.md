@@ -63,8 +63,16 @@ so the basic process which is responsible about VPN is — -> “Outline.exe”
 Q5- What is the attacker's IP address?
 
 If we want to know more about the network info and display network connections, including open ports, IP addresses, and associated processes, we will use the “netscan” plugin
+
 python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.netscan | grep -E "5896"
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/6b0ec66a-24f8-43b1-b764-339f3c07d1c5)
+
+we can see above the address associated with the process is 77.91.124.20
+
+Q6- Based on the previous artifacts. What is the name of the malware family?
+
+
+Q7- What is the full URL of the PHP file that the attacker visited?
 
 
 
