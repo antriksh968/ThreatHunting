@@ -60,7 +60,11 @@ python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.pslist
 we can see here the tun2socks.exe is a child process for Outline.exe
 so the basic process which is responsible about VPN is — -> “Outline.exe”
 
+Q5- What is the attacker's IP address?
 
+If we want to know more about the network info and display network connections, including open ports, IP addresses, and associated processes, we will use the “netscan” plugin
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.netscan | grep -E "5896"
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/6b0ec66a-24f8-43b1-b764-339f3c07d1c5)
 
 
 
