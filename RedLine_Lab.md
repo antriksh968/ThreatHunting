@@ -42,6 +42,27 @@ We can find the name of the child process name from the above command
 parent process name: rundll32.exe
 
 
+Q3- What is the memory protection applied to the suspicious process memory region?
+
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/78236915-afda-4281-823c-8addecdd75a8)
+PAGE_EXECUTE_READWRITE
+
+Q4- What is the name of the process responsible for the VPN connection?
+ python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.pslist
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/be202a23-c412-41f5-9935-f5f6a7045716)
+
+Now going back to the process tree, we can see a process called tun2socks.exe, which sounds like a process to do something with SOCKS which is a protocol for creating proxy connections and if we observe in the network listing,
+
+tun2socks.exe is actually a component of some VPN solutions, specifically those that utilize the TUN/TAP driver. It is responsible for redirecting network traffic from the VPN interface to a SOCKS proxy server,
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.pslist | grep -E "4628|6724"
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/6597e79b-5ef2-4f3f-a4b3-03ed66206f32)
+
+we can see here the tun2socks.exe is a child process for Outline.exe
+so the basic process which is responsible about VPN is — -> “Outline.exe”
+
+
+
+
 
 
 
