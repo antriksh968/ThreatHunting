@@ -73,6 +73,21 @@ Q6- Based on the previous artifacts. What is the name of the malware family?
 
 
 Q7- What is the full URL of the PHP file that the attacker visited?
+strings /media/sf_kali_labs_data/RedLine/MemoryDump.mem | grep 77.91.124.20
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/7271374c-fa4e-46d3-a7a7-0fc2bec2c8ee)
+http://77.91.124.20/store/games/index.php
+
+Q8- What is the full path of the malicious executable?
+We can use “filescan” plugin to perform this task, file scan for suspicious process
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.filescan
+python3 vol.py -f /media/sf_kali_labs_data/RedLine/MemoryDump.mem windows.filescan | grep -i oneetx.exe
+
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/2dfeb53a-8bbf-42db-9c57-6571f67a9ba8)
+
+\Users\Tammam\AppData\Local\Temp\c3912af058\oneetx.exe
+
+
+
 
 
 
