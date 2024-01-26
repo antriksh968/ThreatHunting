@@ -50,14 +50,15 @@ python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw w
 md5sum file.0x89a10938.0x89a10568.ImageSectionObject.svchost.exe.img
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/43d35454-ad14-40d9-acf1-5bee39029f29)
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/ab6376f1-69d3-4ddf-b909-a2baf44b4a74)
-Above result from virus total seems the process is suspicious
+The above result from Virustotal seems the process is suspicious
+
 svchost.exe
-
-
 
 Q6. There is an odd file referenced in the recent process. Provide the full path of that file.
 
-strings ./pid.880.vad.0x980000-0x988fff.dmp 
+we know that svchost is responsible for code injection we need to look into the processes of that
+
+strings pid.880.vad.0x980000-0x988fff.dmp 
 
 Q7. What is the name of the injected dll file loaded from the recent process?
 
