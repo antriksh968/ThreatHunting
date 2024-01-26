@@ -3,7 +3,7 @@ A multinational corporation has been hit by a cyber attack that has led to the t
 
 Q1. Which volatility profile would be best for this machine?
 
-**Note: In Volatility, we must choose a profile that best identifies the type of operating system and service pack that helps Volatility in identifying locations that store artifacts and useful information. **
+Note: In Volatility, we must choose a profile that best identifies the type of operating system and service pack that helps Volatility in identifying locations that store artifacts and useful information.
 
 python2 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw imageinfo
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/9751dc2d-688d-4a73-b7a5-160d5f486297)
