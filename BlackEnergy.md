@@ -21,6 +21,9 @@ From the above snip we found the pid is 1960
 Q4.  What is the name of the most suspicious process?
 We listed the process rootkit.exe seems to be suspicious 
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/abe25ff8-bdf7-4c74-8116-486f8d28fa1a)
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/294e1730-8875-457a-8f5d-76ee4fa8491a)
+
+
 
 
 
