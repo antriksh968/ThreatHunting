@@ -31,22 +31,28 @@ And the other indicator of being suspicious is rootkit.exe parent process is cmd
 
 Q5. Which process shows the highest likelihood of code injection?
 
-python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw windows.malfind 
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/ebf3d850-678f-4b9b-92b9-651f65a36e31)
-Multiple processes were detected to potentially contain injected code, but I focused on analyzing svchost.exe due to the presence of the ‘MZ’ header.
-Dump the process svchost.exe
-svchost.exe is a legitimate system process in Windows operating systems that host multiple services in order to improve system performance and reduce resource consumption. The purpose of svchost.exe is to act as a container or “host” for various Windows services so that these services can be run more efficiently by sharing system resources.
-Regarding code injection, svchost.exe has been used as a target for malware and other malicious code injection techniques. This is because svchost.exe is a legitimate process that runs with high privileges and is trusted by the operating system.
+Note: Code injection refers to the unauthorized insertion of code into a computer program or software system. It is a common attack vector used by hackers to exploit vulnerabilities and compromise the security of a system.
 
-“4d 5a”: These are the first two bytes of the memory dump, which represent the “magic number” for the Windows executable file format. The values “4d 5a” are the ASCII codes for the letters “M” and “Z”, which stand for “Mark Zbikowski”, the developer who designed the original MS-DOS file format.
+/volatility_2.6_lin64_standalone -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw malfind
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/8b19be34-4051-4f16-8bea-ecbd8721cf17)
 
-“90 00”: These two bytes are part of the file header and indicate the size of the executable file’s header in paragraphs. In this case, the value is 0x90, which means that the header size is 144 bytes.
+we can see that svchost.exe is
 
+1. not mapped to disk. (Malfind plugin will display each process that not mapped to disk.)
+   
+2. Protection: PAGE_EXECUTE_READWRITE
+   
+3. The MZ header
+Now we can dump the process id 880 of svchost which we are assuming suspicious
 
-python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw windows.malfind --pid 880 --dump
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/598200fc-a70b-4035-9f2a-2dbd3a92a50e)
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/0fd7d889-df6c-45d4-b7d4-bf0b03df2ffc)
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/5279645c-0689-40b7-8d17-3d152fbf5a8e)
+python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw windows.dumpfile --pid 880
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/013e1bc2-23d9-454a-bab2-3f19a4cd7f91)
+md5sum file.0x89a10938.0x89a10568.ImageSectionObject.svchost.exe.img
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/43d35454-ad14-40d9-acf1-5bee39029f29)
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/ab6376f1-69d3-4ddf-b909-a2baf44b4a74)
+Above result from virus total seems the process is suspicious
+svchost.exe
+
 
 
 Q6. There is an odd file referenced in the recent process. Provide the full path of that file.
