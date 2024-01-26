@@ -10,6 +10,7 @@ imageinfo – is the plugin command to identify information for the image like t
 Q2. How many processes were running when the image was acquired?
 
 python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw  windows.pslist
+
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/1e84ae12-c613-4e35-94ff-6fb430906325)
 From above we found 25 processes out of them 6 are not active so the current running processes are 19.
 
@@ -21,7 +22,8 @@ From the above snip we found the pid is 1960
 Q4.  What is the name of the most suspicious process?
 We listed the process rootkit.exe seems to be suspicious 
 ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/abe25ff8-bdf7-4c74-8116-486f8d28fa1a)
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/294e1730-8875-457a-8f5d-76ee4fa8491a)
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/294e1730-8875-457a-8f5d-76ee4fa8491a) 
+And the other indicator of being suspicious is rootkit.exe parent process is cmd.exe.
 
 
 
