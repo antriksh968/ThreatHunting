@@ -3,10 +3,15 @@ Volatility Foundation Volatility Framework 2.6
 
 Profiles
 --------
+
 VistaSP0x64           - A Profile for Windows Vista SP0 x64
+
 VistaSP0x86           - A Profile for Windows Vista SP0 x86
+
 VistaSP1x64           - A Profile for Windows Vista SP1 x64
+
 VistaSP1x86           - A Profile for Windows Vista SP1 x86
+
 VistaSP2x64           - A Profile for Windows Vista SP2 x64
 VistaSP2x86           - A Profile for Windows Vista SP2 x86
 Win10x64              - A Profile for Windows 10 x64
