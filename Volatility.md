@@ -13,170 +13,324 @@ VistaSP1x64           - A Profile for Windows Vista SP1 x64
 VistaSP1x86           - A Profile for Windows Vista SP1 x86
 
 VistaSP2x64           - A Profile for Windows Vista SP2 x64
+
 VistaSP2x86           - A Profile for Windows Vista SP2 x86
+
 Win10x64              - A Profile for Windows 10 x64
+
 Win10x64_10586        - A Profile for Windows 10 x64 (10.0.10586.306 / 2016-04-23)
+
+
 Win10x64_14393        - A Profile for Windows 10 x64 (10.0.14393.0 / 2016-07-16)
+
 Win10x86              - A Profile for Windows 10 x86
+
 Win10x86_10586        - A Profile for Windows 10 x86 (10.0.10586.420 / 2016-05-28)
+
 Win10x86_14393        - A Profile for Windows 10 x86 (10.0.14393.0 / 2016-07-16)
+
 Win2003SP0x86         - A Profile for Windows 2003 SP0 x86
+
 Win2003SP1x64         - A Profile for Windows 2003 SP1 x64
+
 Win2003SP1x86         - A Profile for Windows 2003 SP1 x86
+
 Win2003SP2x64         - A Profile for Windows 2003 SP2 x64
+
 Win2003SP2x86         - A Profile for Windows 2003 SP2 x86
+
 Win2008R2SP0x64       - A Profile for Windows 2008 R2 SP0 x64
+
 Win2008R2SP1x64       - A Profile for Windows 2008 R2 SP1 x64
+
 Win2008R2SP1x64_23418 - A Profile for Windows 2008 R2 SP1 x64 (6.1.7601.23418 / 2016-04-09)
+
 Win2008SP1x64         - A Profile for Windows 2008 SP1 x64
+
 Win2008SP1x86         - A Profile for Windows 2008 SP1 x86
+
 Win2008SP2x64         - A Profile for Windows 2008 SP2 x64
+
 Win2008SP2x86         - A Profile for Windows 2008 SP2 x86
+
 Win2012R2x64          - A Profile for Windows Server 2012 R2 x64
+
 Win2012R2x64_18340    - A Profile for Windows Server 2012 R2 x64 (6.3.9600.18340 / 2016-05-13)
+
 Win2012x64            - A Profile for Windows Server 2012 x64
+
 Win2016x64_14393      - A Profile for Windows Server 2016 x64 (10.0.14393.0 / 2016-07-16)
+
 Win7SP0x64            - A Profile for Windows 7 SP0 x64
+
 Win7SP0x86            - A Profile for Windows 7 SP0 x86
+
 Win7SP1x64            - A Profile for Windows 7 SP1 x64
+
 Win7SP1x64_23418      - A Profile for Windows 7 SP1 x64 (6.1.7601.23418 / 2016-04-09)
+
 Win7SP1x86            - A Profile for Windows 7 SP1 x86
+
 Win7SP1x86_23418      - A Profile for Windows 7 SP1 x86 (6.1.7601.23418 / 2016-04-09)
+
 Win81U1x64            - A Profile for Windows 8.1 Update 1 x64
+
 Win81U1x86            - A Profile for Windows 8.1 Update 1 x86
+
 Win8SP0x64            - A Profile for Windows 8 x64
+
 Win8SP0x86            - A Profile for Windows 8 x86
+
 Win8SP1x64            - A Profile for Windows 8.1 x64
+
 Win8SP1x64_18340      - A Profile for Windows 8.1 x64 (6.3.9600.18340 / 2016-05-13)
+
 Win8SP1x86            - A Profile for Windows 8.1 x86
+
 WinXPSP1x64           - A Profile for Windows XP SP1 x64
+
 WinXPSP2x64           - A Profile for Windows XP SP2 x64
+
 WinXPSP2x86           - A Profile for Windows XP SP2 x86
+
 WinXPSP3x86           - A Profile for Windows XP SP3 x86
 
 
 Address Spaces
 --------------
 AMD64PagedMemory              - Standard AMD 64-bit address space.
+
 ArmAddressSpace               - Address space for ARM processors
+
 FileAddressSpace              - This is a direct file AS.
+
 HPAKAddressSpace              - This AS supports the HPAK format
+
 IA32PagedMemory               - Standard IA-32 paging address space.
+
 IA32PagedMemoryPae            - This class implements the IA-32 PAE paging address space. It is responsible
+
 LimeAddressSpace              - Address space for Lime
+
 LinuxAMD64PagedMemory         - Linux-specific AMD 64-bit address space.
+
 MachOAddressSpace             - Address space for mach-o files to support atc-ny memory reader
+
 OSXPmemELF                    - This AS supports VirtualBox ELF64 coredump format
+
 QemuCoreDumpElf               - This AS supports Qemu ELF32 and ELF64 coredump format
+
 VMWareAddressSpace            - This AS supports VMware snapshot (VMSS) and saved state (VMSS) files
+
 VMWareMetaAddressSpace        - This AS supports the VMEM format with VMSN/VMSS metadata
+
 VirtualBoxCoreDumpElf64       - This AS supports VirtualBox ELF64 coredump format
+
 Win10AMD64PagedMemory         - Windows 10-specific AMD 64-bit address space.
+
 WindowsAMD64PagedMemory       - Windows-specific AMD 64-bit address space.
+
 WindowsCrashDumpSpace32       - This AS supports windows Crash Dump format
+
 WindowsCrashDumpSpace64       - This AS supports windows Crash Dump format
+
 WindowsCrashDumpSpace64BitMap - This AS supports Windows BitMap Crash Dump format
+
 WindowsHiberFileSpace32       - This is a hibernate address space for windows hibernation files.
+
 
 
 Scanner Checks
 --------------
+
 CheckPoolSize          - Check pool block size
+
 CheckPoolType          - Check the pool type
+
 KPCRScannerCheck       - Checks the self referential pointers to find KPCRs
+
 MultiPrefixFinderCheck - Checks for multiple strings per page, finishing at the offset
+
 MultiStringFinderCheck - Checks for multiple strings per page
+
 PoolTagCheck           - This scanner checks for the occurance of a pool tag
 
 
 Plugins
 -------
+
 amcache                    - Print AmCache information
+
 apihooks                   - Detect API hooks in process and kernel memory
+
 atoms                      - Print session and window station atom tables
+
 atomscan                   - Pool scanner for atom tables
+
 auditpol                   - Prints out the Audit Policies from HKLM\SECURITY\Policy\PolAdtEv
+
 bigpools                   - Dump the big page pools using BigPagePoolScanner
+
 bioskbd                    - Reads the keyboard buffer from Real Mode memory
+
 cachedump                  - Dumps cached domain hashes from memory
+
 callbacks                  - Print system-wide notification routines
+
 clipboard                  - Extract the contents of the windows clipboard
+
 cmdline                    - Display process command-line arguments
+
 cmdscan                    - Extract command history by scanning for _COMMAND_HISTORY
+
 connections                - Print list of open connections [Windows XP and 2003 Only]
+
 connscan                   - Pool scanner for tcp connections
+
 consoles                   - Extract command history by scanning for _CONSOLE_INFORMATION
+
 crashinfo                  - Dump crash-dump information
+
 deskscan                   - Poolscaner for tagDESKTOP (desktops)
+
 devicetree                 - Show device tree
+
 dlldump                    - Dump DLLs from a process address space
+
 dlllist                    - Print list of loaded dlls for each process
+
 driverirp                  - Driver IRP hook detection
+
 drivermodule               - Associate driver objects to kernel modules
+
 driverscan                 - Pool scanner for driver objects
+
 dumpcerts                  - Dump RSA private and public SSL keys
+
 dumpfiles                  - Extract memory mapped and cached files
+
 dumpregistry               - Dumps registry files out to disk
+
 editbox                    - Displays information about Edit controls. (Listbox experimental.)
+
 envars                     - Display process environment variables
+
 eventhooks                 - Print details on windows event hooks
+
 evtlogs                    - Extract Windows Event Logs (XP/2003 only)
+
 filescan                   - Pool scanner for file objects
+
 gahti                      - Dump the USER handle type information
+
 gditimers                  - Print installed GDI timers and callbacks
+
 gdt                        - Display Global Descriptor Table
+
 getservicesids             - Get the names of services in the Registry and return Calculated SID
+
 getsids                    - Print the SIDs owning each process
+
 handles                    - Print list of open handles for each process
+
 hashdump                   - Dumps passwords hashes (LM/NTLM) from memory
+
 hibinfo                    - Dump hibernation file information
+
 hivedump                   - Prints out a hive
+
 hivelist                   - Print list of registry hives.
+
 hivescan                   - Pool scanner for registry hives
+
 hpakextract                - Extract physical memory from an HPAK file
+
 hpakinfo                   - Info on an HPAK file
+
 idt                        - Display Interrupt Descriptor Table
+
 iehistory                  - Reconstruct Internet Explorer cache / history
+
 imagecopy                  - Copies a physical address space out as a raw DD image
+
 imageinfo                  - Identify information for the image
+
 impscan                    - Scan for calls to imported functions
+
 joblinks                   - Print process job link information
+
 kdbgscan                   - Search for and dump potential KDBG values
+
 kpcrscan                   - Search for and dump potential KPCR values
+
 ldrmodules                 - Detect unlinked DLLs
+
 limeinfo                   - Dump Lime file format information
+
 linux_apihooks             - Checks for userland apihooks
+
 linux_arp                  - Print the ARP table
+
 linux_aslr_shift           - Automatically detect the Linux ASLR shift
+
 linux_banner               - Prints the Linux banner information
+
 linux_bash                 - Recover bash history from bash process memory
+
 linux_bash_env             - Recover a process' dynamic environment variables
+
 linux_bash_hash            - Recover bash hash table from bash process memory
+
 linux_check_afinfo         - Verifies the operation function pointers of network protocols
+
 linux_check_creds          - Checks if any processes are sharing credential structures
+
 linux_check_evt_arm        - Checks the Exception Vector Table to look for syscall table hooking
+
 linux_check_fop            - Check file operation structures for rootkit modifications
+
 linux_check_idt            - Checks if the IDT has been altered
+
 linux_check_inline_kernel  - Check for inline kernel hooks
+
 linux_check_modules        - Compares module list to sysfs info, if available
+
 linux_check_syscall        - Checks if the system call table has been altered
+
 linux_check_syscall_arm    - Checks if the system call table has been altered
+
 linux_check_tty            - Checks tty devices for hooks
+
 linux_cpuinfo              - Prints info about each active processor
+
 linux_dentry_cache         - Gather files from the dentry cache
+
 linux_dmesg                - Gather dmesg buffer
+
 linux_dump_map             - Writes selected memory mappings to disk
+
 linux_dynamic_env          - Recover a process' dynamic environment variables
+
 linux_elfs                 - Find ELF binaries in process mappings
+
 linux_enumerate_files      - Lists files referenced by the filesystem cache
+
 linux_find_file            - Lists and recovers files from memory
+
 linux_getcwd               - Lists current working directory of each process
+
 linux_hidden_modules       - Carves memory to find hidden kernel modules
+
 linux_ifconfig             - Gathers active interfaces
+
 linux_info_regs            - It's like 'info registers' in GDB. It prints out all the
+
 linux_iomem                - Provides output similar to /proc/iomem
+
 linux_kernel_opened_files  - Lists files that are opened from within the kernel
+
 linux_keyboard_notifiers   - Parses the keyboard notifier call chain
+
 linux_ldrmodules           - Compares the output of proc maps with the list of libraries from libdl
 linux_library_list         - Lists libraries loaded into a process
 linux_librarydump          - Dumps shared libraries in process memory to disk
