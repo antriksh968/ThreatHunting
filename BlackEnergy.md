@@ -5,16 +5,16 @@ Q1. Which volatility profile would be best for this machine?
 
 Note: In Volatility, we must choose a profile that best identifies the type of operating system and service pack that helps Volatility in identifying locations that store artifacts and useful information.
 
-python2 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw imageinfo
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/9751dc2d-688d-4a73-b7a5-160d5f486297)
+ ./volatility_2.6_lin64_standalone -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw imageinfo
+ ![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/0fe6992a-fe52-48b6-82dc-07d07c38188d)
 
 imageinfo – is the plugin command to identify information for the image like the operating system, service pack, hardware architecture, and other useful information
 
 Q2. How many processes were running when the image was acquired?
 
-python3 vol.py -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw  windows.pslist
+./volatility_2.6_lin64_standalone -f /media/sf_kali_labs_data/CYBERDEF-567078-20230213-171333.raw pslist
+![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/e5c3b788-0e82-4c23-9c96-1b20214972b3)
 
-![image](https://github.com/antriksh968/cyberdefenders/assets/74059350/1e84ae12-c613-4e35-94ff-6fb430906325)
 From above we found 25 processes out of them 6 are not active so the current running processes are 19.
 
 Q3. What is the process ID of cmd.exe?
