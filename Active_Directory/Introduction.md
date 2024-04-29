@@ -2,4 +2,5 @@
 The main core of Active Directory is Kerberos. It is a protocol used for authentication, authorization process for large scale environments. We will cover basic terms in Active Directory as well as how Kerberos authentication works
 
 **What is Kerberos?**
+
 Kerberos is the default authentication service for Microsoft Windows domains. It is intended to be more "secure" than NTLM by using third party ticket authorization as well as stronger encryption. It runs on UDP port 88.
